@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma página romântica com flores, música e poemas em português.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flores amarelas para ti</title>
+</head>
+
+<body>
+    <div class="background-glow"></div>
+    <div class="petals" aria-hidden="true">
+        <span class="petal petal--1"></span>
+        <span class="petal petal--2"></span>
+        <span class="petal petal--3"></span>
+        <span class="petal petal--4"></span>
+        <span class="petal petal--5"></span>
+        <span class="petal petal--6"></span>
+    </div>
+
+    <section class="access-gate" id="accessGate" aria-hidden="false">
+        <div class="access-gate__card card-surface">
+            <p class="eyebrow">Antes de entrar</p>
+            <h2>Pra você sempre lembrar de mim quando tiver saudade e pra suas dúvidas do meu amor.</h2>
+            <p class="access-gate__text">Tem uma senha simples. Dica: é o nome do nosso maior fã.</p>
+            <form class="access-gate__form" id="accessForm">
+                <label class="access-gate__label" for="accessPassword">Senha</label>
+                <input class="access-gate__input" id="accessPassword" name="accessPassword" type="password" autocomplete="off" placeholder="Digite a senha" required>
+                <button class="button button--primary" type="submit">Entrar</button>
+            </form>
+            <p class="access-gate__feedback" id="accessFeedback" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <main class="page-shell">
+        <section class="hero" id="inicio">
+            <div class="hero__scene" aria-hidden="true">
+                <iframe class="hero__frame" src="flower.html?embed=1" title="Flores amarelas"></iframe>
+            </div>
+
+            <div class="hero__copy card-surface">
+                <p class="eyebrow">Um cantinho feito para ela</p>
+                <p class="hero__name">Isabela <span class="blurred-name">Miranda</span> Vidal</p>
+                <h1>Flores amarelas, coração acelerado e tudo o que eu queria te dizer.</h1>
+                <p class="hero__text">Pra você sempre lembrar de mim quando tiver saudade e pra suas dúvidas do meu amor.</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="flower.html">Flores que eu queria te dar</a>
+                    <button class="button button--ghost" id="specialButton" type="button">O que eu mais queria te falar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-grid">
+            <article class="mini-card card-surface">
+                <p class="mini-card__label">Motivo dessa surpresa</p>
+                <p>Porque às vezes um presente simples carrega exatamente o tamanho do sentimento.</p>
+            </article>
+        </section>
+
+        <section class="music card-surface" id="flores">
+            <div class="section-heading">
+                <p class="eyebrow">Flores amarelas</p>
+                <h2>Esse é o caminho para as flores que eu queria te dar.</h2>
+                <p>Quando tu apertares o botão, vais abrir a cena das flores amarelas no estilo original do projeto, com o mesmo clima bonito que tu gostaste.</p>
+            </div>
+
+            <div class="flowers-entry">
+                <a class="button button--primary" href="flower.html">Abrir flower.html</a>
+            </div>
+        </section>
+
+        <section class="poems card-surface" id="poemas">
+            <div class="section-heading">
+                <p class="eyebrow">Poemas que eu nunca contei pra ti</p>
+                <h2>Guardei essas palavras até este momento.</h2>
+                <p>Quando tu quiseres, toca no botão e deixa os poemas subirem devagar, como se estivessem encontrando o lugar certo para ficar.</p>
+            </div>
+
+            <div class="poems__actions">
+                <button class="button button--primary" id="poemButton" type="button">Quero ler os poemas</button>
+                <button class="button button--ghost" id="closePoems" type="button" hidden>Fechar poemas</button>
+            </div>
+
+            <div class="poems-wall" id="poemsWall" aria-live="polite">
+                <article class="poem-card">
+                    <time datetime="2026-01-18">18 de janeiro de 2026</time>
+                    <p>Tu chegas de um jeito tão manso que até os dias corridos diminuem o passo. Parece que o mundo entende, por alguns segundos, que a pressa não combina contigo.</p>
+                </article>
+                <article class="poem-card">
+                    <time datetime="2026-02-07">7 de fevereiro de 2026</time>
+                    <p>Às vezes eu penso em te explicar o que sinto, mas a verdade é que nenhuma frase alcança esse brilho quieto que fica em mim toda vez que lembro do teu sorriso.</p>
+                </article>
+                <article class="poem-card">
+                    <time datetime="2026-02-26">26 de fevereiro de 2026</time>
+                    <p>Se eu pudesse escolher um lugar seguro para morar por dentro, escolheria a paz que tua presença inventa. Tem aconchego até no silêncio quando ele passa por ti.</p>
+                </article>
+                <article class="poem-card">
+                    <time datetime="2026-03-14">14 de março de 2026</time>
+                    <p>Tu és dessas pessoas raras que deixam claridade mesmo depois de irem embora. Fica um rastro bonito, como janela aberta depois da chuva.</p>
+                </article>
+                <article class="poem-card">
+                    <time datetime="2026-04-05">5 de abril de 2026</time>
+                    <p>Hoje eu só queria te entregar isso: a certeza de que existe carinho demais aqui, crescendo em silêncio, com a delicadeza de quem prefere provar em gestos o que sente.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <section class="love-overlay" id="loveOverlay" aria-hidden="true">
+        <button class="love-overlay__close" id="closeOverlay" type="button">Fechar</button>
+        <div class="love-overlay__inner">
+            <p class="eyebrow">Algo especial</p>
+            <h2>Um céu cheio de “te amo” só para ela.</h2>
+            <p>Fica um pouco aqui e deixa esse carinho girar em volta de tudo.</p>
+        </div>
+        <div class="love-galaxy" id="loveGalaxy"></div>
+    </section>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
