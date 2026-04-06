@@ -393,6 +393,10 @@ button {
     margin-top: 28px;
 }
 
+.spotify-frame {
+    margin-top: 24px;
+}
+
 .poems-wall {
     display: grid;
     gap: 16px;
