@@ -397,6 +397,22 @@ button {
     margin-top: 24px;
 }
 
+.music-list {
+    display: grid;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.music-list .spotify-frame {
+    margin-top: 0;
+}
+
+.playlist-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
 .poems-wall {
     display: grid;
     gap: 16px;
