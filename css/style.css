@@ -539,6 +539,12 @@ button {
 }
 
 @media (max-width: 640px) {
+    .petal--4,
+    .petal--5,
+    .petal--6 {
+        display: none;
+    }
+
     .page-shell {
         width: min(100% - 20px, 1120px);
         padding-top: 14px;

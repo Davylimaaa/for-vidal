@@ -30,6 +30,18 @@
         background: rgba(253, 221, 37, 0.18);
         transform: translateX(-3px);
       }
+
+      .embed-lite .voltar-btn {
+        display: none;
+      }
+
+      .embed-lite .night {
+        filter: none;
+      }
+
+      .embed-lite .flowers {
+        transform: scale(0.8);
+      }
     </style>
   </head>
   <body class="container">
@@ -354,8 +366,14 @@
       const embedMode = new URLSearchParams(window.location.search).get('embed') === '1';
 
       if (embedMode) {
+        document.body.classList.add('embed-lite');
         document.getElementById('lyrics')?.remove();
         document.querySelector('.titulo')?.remove();
+
+        document.querySelectorAll('.long-g, .growing-grass').forEach((element) => {
+          element.remove();
+        });
+
         const audio = document.querySelector('audio');
         if (audio) {
           audio.pause();

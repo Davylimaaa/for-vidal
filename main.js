@@ -13,18 +13,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const validPassword = 'rafael';
 
     const phrases = [
-        'Te amo',
-        'Te amo muito',
-        'Te amo daqui até o infinito',
-        'Te amo em cada detalhe',
-        'Te amo com calma',
-        'Te amo por inteira',
-        'Te amo nos dias leves',
-        'Te amo nos dias difíceis',
-        'Te amo mais do que consigo dizer',
-        'Te amo em silêncio também',
-        'Te amo com flores',
-        'Te amo com o coração inteiro'
+        'Te amo',           // Português
+        'I love you',       // Inglês
+        'Je t\'aime',       // Francês
+        'Ti amo',           // Italiano
+        'Te quiero',        // Espanhol
+        'Ich liebe dich',   // Alemão
+        'Eu te amo',        // Português BR
+        'Seni seviyorum',   // Turco
+        'Mahal kita',       // Filipino
+        'Ana uhibbuki',     // Árabe
+        'Σ\'αγαπώ',        // Grego
+        'Я тебя люблю',    // Russo
+        'Aishiteru',        // Japonês
+        'Wo ai ni',         // Mandarim
+        'Saranghae',        // Coreano
+        'Ik hou van jou',   // Holandês
+        'Kocham cię',       // Polonês
+        'Te adoro',         // Português
+        'Mon amour',        // Francês
+        'Minha vida'        // Português
     ];
 
     function createGalaxy() {
@@ -32,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        for (let index = 0; index < 42; index += 1) {
+        for (let index = 0; index < 24; index += 1) {
             const phrase = document.createElement('span');
             const radius = 90 + Math.random() * 380;
             const duration = 8 + Math.random() * 11;
